@@ -1,0 +1,16 @@
+C:\Users\Fmudi\Desktop\WinFormsApp15\WinFormsApp15\obj\Debug\net6.0-windows\WinFormsApp15.csproj.GenerateResource.cache
+C:\Users\Fmudi\Desktop\WinFormsApp15\WinFormsApp15\obj\Debug\net6.0-windows\WinFormsApp15.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fmudi\Desktop\WinFormsApp15\WinFormsApp15\obj\Debug\net6.0-windows\WinFormsApp15.AssemblyInfoInputs.cache
+C:\Users\Fmudi\Desktop\WinFormsApp15\WinFormsApp15\obj\Debug\net6.0-windows\WinFormsApp15.AssemblyInfo.cs
+C:\Users\Fmudi\Desktop\WinFormsApp15\WinFormsApp15\obj\Debug\net6.0-windows\WinFormsApp15.csproj.CoreCompileInputs.cache
+C:\Users\Fmudi\Desktop\WinFormsApp15\WinFormsApp15\obj\Debug\net6.0-windows\WinFormsApp15.Form1.resources
+C:\Users\Fmudi\Desktop\WinFormsApp15\WinFormsApp15\bin\Debug\net6.0-windows\WinFormsApp15.exe
+C:\Users\Fmudi\Desktop\WinFormsApp15\WinFormsApp15\bin\Debug\net6.0-windows\WinFormsApp15.deps.json
+C:\Users\Fmudi\Desktop\WinFormsApp15\WinFormsApp15\bin\Debug\net6.0-windows\WinFormsApp15.runtimeconfig.json
+C:\Users\Fmudi\Desktop\WinFormsApp15\WinFormsApp15\bin\Debug\net6.0-windows\WinFormsApp15.dll
+C:\Users\Fmudi\Desktop\WinFormsApp15\WinFormsApp15\bin\Debug\net6.0-windows\WinFormsApp15.pdb
+C:\Users\Fmudi\Desktop\WinFormsApp15\WinFormsApp15\obj\Debug\net6.0-windows\WinFormsApp15.dll
+C:\Users\Fmudi\Desktop\WinFormsApp15\WinFormsApp15\obj\Debug\net6.0-windows\refint\WinFormsApp15.dll
+C:\Users\Fmudi\Desktop\WinFormsApp15\WinFormsApp15\obj\Debug\net6.0-windows\WinFormsApp15.pdb
+C:\Users\Fmudi\Desktop\WinFormsApp15\WinFormsApp15\obj\Debug\net6.0-windows\WinFormsApp15.genruntimeconfig.cache
+C:\Users\Fmudi\Desktop\WinFormsApp15\WinFormsApp15\obj\Debug\net6.0-windows\ref\WinFormsApp15.dll
