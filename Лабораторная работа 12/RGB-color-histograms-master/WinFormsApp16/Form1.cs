@@ -235,9 +235,37 @@ namespace WinFormsApp16
                 rHistogramBox.Image = DrawSingleHistogram(rHist, maxR, Color.Red, rHistogramBox.Width, rHistogramBox.Height);
                 gHistogramBox.Image = DrawSingleHistogram(gHist, maxG, Color.Green, gHistogramBox.Width, gHistogramBox.Height);
                 bHistogramBox.Image = DrawSingleHistogram(bHist, maxB, Color.Blue, bHistogramBox.Width, bHistogramBox.Height);
+        }
+
+        private void GenerateHistograms2(Bitmap image)
+        {
+            int[] rHist = new int[256];
+            int[] gHist = new int[256];
+            int[] bHist = new int[256];
+
+            for (int y = 0; y < image.Height; y++)
+            {
+                for (int x = 0; x < image.Width; x++)
+                {
+                    Color pixel = image.GetPixel(x, y);
+                    rHist[pixel.R]++;
+                    gHist[pixel.G]++;
+                    bHist[pixel.B]++;
+                }
             }
 
-            private Bitmap DrawCombinedHistogram(int[] rHist, int[] gHist, int[] bHist, int maxValue, int width, int height)
+            int maxR = rHist.Max();
+            int maxG = gHist.Max();
+            int maxB = bHist.Max();
+            int maxAll = new[] { maxR, maxG, maxB }.Max();
+
+            rgbHistogramBox.Image = DrawCombinedHistogram(rUserHist, gUserHist, bUserHist, 255, rgbHistogramBox.Width, rgbHistogramBox.Height);
+            rHistogramBox.Image = DrawSingleHistogram(rUserHist, 255, Color.Red, rHistogramBox.Width, rHistogramBox.Height);
+            gHistogramBox.Image = DrawSingleHistogram(gUserHist, 255, Color.Green, gHistogramBox.Width, gHistogramBox.Height);
+            bHistogramBox.Image = DrawSingleHistogram(bUserHist, 255, Color.Blue, bHistogramBox.Width, bHistogramBox.Height);
+        }
+
+        private Bitmap DrawCombinedHistogram(int[] rHist, int[] gHist, int[] bHist, int maxValue, int width, int height)
             {
                 Bitmap bmp = new Bitmap(width, height);
                 using (Graphics g = Graphics.FromImage(bmp))
@@ -291,7 +319,9 @@ namespace WinFormsApp16
             {
                 if (pictureBox.Image == null) return;
 
-                Bitmap original = (Bitmap)pictureBox.Image;
+
+
+            Bitmap original = (Bitmap)pictureBox.Image;
                 Bitmap modified = new Bitmap(original.Width, original.Height);
 
                 for (int y = 0; y < original.Height; y++)
@@ -313,7 +343,7 @@ namespace WinFormsApp16
                 }
 
                 pictureBox.Image = modified;
-                GenerateHistograms(modified);
+                GenerateHistograms2(modified);
             }
         }
     }
